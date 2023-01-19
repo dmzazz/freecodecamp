@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <hr>
+    <p id="description">This survey for committee Renstoration 2023</p>
+  </header>
+
+  <!-- Container -->
+  <div class="container">
+    <!-- form -->
+    <form action="" method="post" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name 
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email 
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone 
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="62" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="age" id="number-label">Age 
+        <input type="number" id="number" name="number" min="16" max="50" class="form-control" placeholder="Age">
+        </label>
+      </div>
+
+      <!-- Gender -->
+
+      <div class="form-group">
+        <p id="gender">Gender </p>
+        <label for="male"> 
+        <input type="radio" id="male" name="male" class="inline" value="male" required>Male
+        </label>
+        <label for="female"> 
+        <input type="radio" id="female" name="female" class="inline" value="female" required>Female
+        </label>
+      </div>
+      
+      <!-- Role -->
+
+      <div class="form-group">
+        <p id="role">Select your role</p>
+          <select id="dropdown" class="form-control">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+      </div>
+
+      <!-- Division -->
+
+      <div class="form-group">
+        <p id="division">Division</p>
+        <label for="fund-raising">
+          <input type="checkbox" id="fund-raising" name="fund-raising" class="inline" value="fund-raising" required>Fund Raising
+        </label>
+        <label for="event-organizer">
+          <input type="checkbox" id="event-organizer" name="event-organizer" class="inline" value="event-organizer" required>Event Organizer
+        </label>
+        <label for="sponsorship">
+          <input type="checkbox" id="sponsorship" name="sponsorship" class="inline" value="sponsorship" required>Sponsorship
+        </label>
+        <label for="liaison-officer">
+          <input type="checkbox" id="liaison-officer" name="liaison-officer" class="inline" value="liaison-officer" required>Liaison Officer
+        </label>
+        <label for="public-relation">
+          <input type="checkbox" id="public-relation" name="public-relation" class="inline" value="public-relation" required>Public Relation
+        </label>
+        <label for="food-beverage">
+          <input type="checkbox" id="food-beverage" name="food-beverage" class="inline" value="food-beverage" required>Food & Beverage
+        </label>
+        <label for="design">
+          <input type="checkbox" id="design" name="design" class="inline" value="design" required>Design
+        </label>
+        <label for="decoration">
+          <input type="checkbox" id="decoration" name="decoration" class="inline" value="decoration" required>Decoration
+        </label>
+        <label for="documentation">
+          <input type="checkbox" id="documentation" name="documentation" class="inline" value="documentation" required>Documentation
+        </label>
+        <label for="multimedia">
+          <input type="checkbox" id="multimedia" name="multimedia" class="inline" value="multimedia" required>Multimedia
+        </label>
+        <label for="logistic">
+          <input type="checkbox" id="logistic" name="logistic" class="inline" value="logistic" required>Logistic
+        </label>
+        <label for="broadcasting">
+          <input type="checkbox" id="broadcasting" name="broadcasting" class="inline" value="broadcasting" required>Broadcasting
+        </label>
+      </div>
+
+      <!-- Reason -->
+
+      <div class="form-group">
+        <p id="Reason">Reason?</p>
+        <label for="reason">
+          <textarea id="reason" name="reason" rows="8" cols="64" placeholder="Enter your reason here..."></textarea>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="submit" id="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
